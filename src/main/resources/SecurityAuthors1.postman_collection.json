@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "188ef6c7-5740-4cb5-a8b7-65130934fd33",
+		"name": "SecurityAuthors1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4117618"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/authenticate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":  \"pepe\",\r\n    \"password\" : 123456\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/autores",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2MjU2OTc4LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2MjM4OTc4fQ.vKteiiV8eyu5Q-03UkDR-33mNVQqLOw2RR7AwhQ_tjCSEAw5i88G8j-l1GAtNO2Cs4FYN9xJClWf3Wa8V3M2dQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autor x ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsYWxvIiwiZXhwIjoxNjk1MzgyNDc4LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjk1MzY0NDc4fQ.Y-3OsWlPpY0Ekquo674sODzsQ1YeID34l8upFjb_QTHLPdwcwzuFree2WCUgdX9r25NyVVgywHL86qMnX7RMqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/autores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/autores",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2MjU2OTc4LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2MjM4OTc4fQ.vKteiiV8eyu5Q-03UkDR-33mNVQqLOw2RR7AwhQ_tjCSEAw5i88G8j-l1GAtNO2Cs4FYN9xJClWf3Wa8V3M2dQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameAuthor\": \"Arguedas\",\r\n    \"emailAuthor\": \"arguedas@gmail.com\",\r\n    \"birthDateAuthor\": \"2011-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2MjU2OTc4LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2MjM4OTc4fQ.vKteiiV8eyu5Q-03UkDR-33mNVQqLOw2RR7AwhQ_tjCSEAw5i88G8j-l1GAtNO2Cs4FYN9xJClWf3Wa8V3M2dQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/save/3/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2Njg5ODI0LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2NjcxODI0fQ.BvfNi33byCRZfcN7hvZjNNXwors50P_i9f1_8NpKa-5mzebDuKdcAE81x0HD0QSiZqhUCLCvvW_2tSZTShNU4w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/save/3/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save",
+						"3",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/save/3/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2NjA2NjUxLCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2NTg4NjUxfQ.B40Z1JNt77v_hY5hirHS10Y9kkLHSZxpSqF0nNp3bnrft7Tatn3Y-HKDa1Kl1V2C_JGx2APVc3S9xMlrlC2InA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/save/3/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save",
+						"3",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/save",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2NjA1NzU0LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2NTg3NzU0fQ.-wVY12FJ_DJ1W55J0f871TyYkHve2zjQ8Nj-JwK4LG8D-IsRufQAu7Jv-o_CEkS1KD2u231snUkIHO-GFe-ifQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"luis\",\r\n    \"password\" : 123456,\r\n    \"enabled\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/autores",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjg2NjAzNzMzLCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjg2NTg1NzMzfQ.zuc_u_PxIeIJ7mEFrbz2H80XMsHEKwiiWvWfxxm7ofqAM73stbOh7f_E3ffm3pgdqdJ8YZPbJ0u7mT4YrKtZIA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Book",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Contars Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZXBlIiwiZXhwIjoxNjkyOTU4NTY3LCJub21icmUiOiJyb3NhIiwiaWF0IjoxNjkyOTQwNTY3fQ.Pt6HmprwQSDE7jwYxUl3JCKsBgHHQpmJcyVxBblTSoN4qqXyOPFXS_mUQJiecWS8Sr5z6zO-oXZT73MDOMBlHQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/contars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"contars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmEiLCJleHAiOjE2OTI5NjAxMTgsIm5vbWJyZSI6InJvc2EiLCJpYXQiOjE2OTI5NDIxMTh9.fOnHrIGCWwMPME6aYc_rpwhmz8QpSPEEfIKWGnPyBQtrEGTMisDLDi921rE1hCWJB1vOPNyFaBCr8RDVKDtDAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
