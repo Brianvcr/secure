@@ -4,6 +4,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/security-demoAuthor-2023-0.0.1-SNAPSHOT.jar bitfood.jar
+COPY --from=build /target/bitfood-0.0.1-SNAPSHOT.jar bitfood.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar", "/bitfood.jar"]
